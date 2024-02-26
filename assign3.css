@@ -1,0 +1,88 @@
+/*<!--Harmeet Singh, 000905920 clerify that this material is my original work. No other person's work has been used without due acknoweldgement. i have not made my work available to anyone else.
+		Date: 03-03-2023, 
+		Purpose of this page to give differnt styles to index page*/
+/*images style*/
+body {
+  background-color: lightblue;
+}
+.images{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	 
+}
+img {
+	width: 30%;
+	border-radius: 50%;
+	}
+/*header styles*/
+header {
+	text-align:center;
+}
+main {
+	margin: 2 3 4 3;
+}
+h1 {
+	color: white;
+	background-color:blue;
+	text-align:center;
+}
+.imagesrefresh {
+	text-align:center;
+	
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+		}
+	to {
+			transform: rotate(360deg);
+		}
+	}
+.spin {
+	animation: spin 3s linear;
+	animation-name:spin;
+	background-color: red;
+	}
+.countdown-timer {
+	padding:10px;
+	
+	color:white;
+}
+#update-count {
+	background-color:darkgrey;
+	color:blue;
+	font-size:26px;
+}
+
+#manual-refresh {
+	  background-color: #4CAF50;
+	  border: none;
+	  border-radius:25%;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  cursor: pointer;
+}
+footer {
+	text-align:center;
+}
+ /* styles for screens smaller than 768px */
+@media (max-width: 768px) {
+
+   body {
+      font-size: 16px;
+   }
+   .images {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .images img {
+      width: 100%;
+      height: auto;
+   }
+}

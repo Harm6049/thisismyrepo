@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--Harmeet Singh, 000905920 clerify that this material is my original work. No other person's work has been used without due acknoweldgement. i have not made my work available to anyone else.
+		Date: 03-03-2023, 
+		The purpose of this page is to display random images of horses, cats, and dogs, with the ability to refresh the images automatically or manually, and to add an animation class to the images when clicked. The automatic refresh interval can be set by the user and a countdown timer is displayed to indicate when the images will be automatically refreshed-->
+		
+		<script src="assignment3.js"></script>
+		<script src="assign3.css"></script>
+		<link rel="stylesheet" href="assign3.css">
+	
+		<title>Images</title>
+		 
+		
+	</head>
+	<body>
+		<header>
+			<p>Name: Harmeet singh</P>
+			<p>student id: 000905920</P>
+		</header>
+		<main>
+			<h1>Random Images</h1>
+			<div class="images">
+			
+				<img src="images/horse1.png"  id="theme1" onclick = "doAnimation(event)" alt="theme 1 images">
+			    <img  src="images/cat2.png" id="theme2" onclick = "doAnimation(event)" alt="theme 2 images">
+				<img src="images/dog2.png"  id="theme3" onclick = "doAnimation(event)" alt="theme 3 images">
+			</div>
+			
+			<div>
+			    <label for="refresh-interval">Automatic refresh in (seconds):</label>
+			    <input type="number" id="refresh-interval" value="1000">
+			</div>
+			<div class="imagesrefresh">
+			    <button class="refreshimages" id="manual-refresh">Refresh Images</button>
+			    <span id="update-count">Images updated: 0</span>
+			    <button onclick="myStopFunction()">Stop!</button>
+			</div>
+			<div class="countdown-time">
+			    <p>Countdown timer: <span class="countdown-timer" id="countdown-timer"></span></p>
+			</div>
+		</main>
+				
+		<footer>
+			<p>ⓒ2023, Harmeet Singh,Mohawk College</p>
+		</footer>
+			
+	</body>
+	
+</html>
